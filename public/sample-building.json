@@ -1,0 +1,27 @@
+{
+  "building": "Central Innovation Hub",
+  "nodes": [
+    { "id": "R1", "label": "Conference Room Alpha", "type": "room", "x": 100, "y": 140 },
+    { "id": "R2", label: "Operations Lab Beta", "type": "room", "x": 100, "y": 340 },
+    { "id": "C1", "label": "Junction North 1", "type": "junction", "x": 280, "y": 140 },
+    { "id": "C2", "label": "Junction North 2", "type": "junction", "x": 460, "y": 140 },
+    { "id": "C3", "label": "Junction South 1", "type": "junction", "x": 280, "y": 340 },
+    { "id": "C4", "label": "Junction South 2", "type": "junction", "x": 460, "y": 340 },
+    { "id": "E1", "label": "Primary Exit Gate 1", "type": "exit", "x": 640, "y": 140 },
+    { "id": "E2", "label": "Secondary Exit Gate 2", "type": "exit", "x": 640, "y": 340 }
+  ],
+  "edges": [
+    { "id": "EDGE_R1_C1", "from": "R1", "to": "C1", "cost": 2 },
+    { "id": "EDGE_C1_C2", "from": "C1", "to": "C2", "cost": 3 },
+    { "id": "EDGE_C2_E1", "from": "C2", "to": "E1", "cost": 2 },
+    { "id": "EDGE_R2_C3", "from": "R2", "to": "C3", "cost": 2 },
+    { "id": "EDGE_C3_C4", "from": "C3", "to": "C4", "cost": 3 },
+    { "id": "EDGE_C4_E2", "from": "C4", "to": "E2", "cost": 2 },
+    { "id": "EDGE_C1_C3", "from": "C1", "to": "C3", "cost": 4 }
+  ],
+  "initial_state": {
+    "blocked_nodes": [],
+    "blocked_edges": [],
+    "closed_exits": []
+  }
+}

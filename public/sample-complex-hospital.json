@@ -1,0 +1,45 @@
+{
+  "building": "Metropolitan Emergency Medical Center",
+  "nodes": [
+    { "id": "ICU_1", "label": "Intensive Care Unit", "type": "room", "x": 80, "y": 100 },
+    { "id": "SURG_1", "label": "Surgical Suite 1", "type": "room", "x": 80, "y": 240 },
+    { "id": "PEDS_1", "label": "Pediatrics Ward", "type": "room", "x": 80, "y": 380 },
+    { "id": "RAD_1", "label": "Radiology Center", "type": "room", "x": 80, "y": 520 },
+    { "id": "J_N1", "label": "Junction N-West", "type": "junction", "x": 240, "y": 100 },
+    { "id": "J_M1", "label": "Junction Mid-West", "type": "junction", "x": 240, "y": 240 },
+    { "id": "J_S1", "label": "Junction S-West", "type": "junction", "x": 240, "y": 380 },
+    { "id": "J_B1", "label": "Junction Basement West", "type": "junction", "x": 240, "y": 520 },
+    { "id": "J_N2", "label": "Junction N-East", "type": "junction", "x": 440, "y": 100 },
+    { "id": "J_M2", "label": "Junction Central Atrium", "type": "junction", "x": 440, "y": 240 },
+    { "id": "J_S2", "label": "Junction S-East", "type": "junction", "x": 440, "y": 380 },
+    { "id": "J_B2", "label": "Junction S-Concourse", "type": "junction", "x": 440, "y": 520 },
+    { "id": "EXIT_N", "label": "North Helipad Exit", "type": "exit", "x": 620, "y": 100 },
+    { "id": "EXIT_E", "label": "East Plaza Evacuation Gate", "type": "exit", "x": 620, "y": 240 },
+    { "id": "EXIT_S", "label": "South Ambulance Bay", "type": "exit", "x": 620, "y": 450 }
+  ],
+  "edges": [
+    { "id": "E_01", "from": "ICU_1", "to": "J_N1", "cost": 2 },
+    { "id": "E_02", "from": "SURG_1", "to": "J_M1", "cost": 2 },
+    { "id": "E_03", "from": "PEDS_1", "to": "J_S1", "cost": 2 },
+    { "id": "E_04", "from": "RAD_1", "to": "J_B1", "cost": 3 },
+    { "id": "E_05", "from": "J_N1", "to": "J_M1", "cost": 3 },
+    { "id": "E_06", "from": "J_M1", "to": "J_S1", "cost": 3 },
+    { "id": "E_07", "from": "J_S1", "to": "J_B1", "cost": 3 },
+    { "id": "E_08", "from": "J_N1", "to": "J_N2", "cost": 4 },
+    { "id": "E_09", "from": "J_M1", "to": "J_M2", "cost": 3 },
+    { "id": "E_10", "from": "J_S1", "to": "J_S2", "cost": 4 },
+    { "id": "E_11", "from": "J_B1", "to": "J_B2", "cost": 5 },
+    { "id": "E_12", "from": "J_N2", "to": "J_M2", "cost": 3 },
+    { "id": "E_13", "from": "J_M2", "to": "J_S2", "cost": 3 },
+    { "id": "E_14", "from": "J_S2", "to": "J_B2", "cost": 3 },
+    { "id": "E_15", "from": "J_N2", "to": "EXIT_N", "cost": 2 },
+    { "id": "E_16", "from": "J_M2", "to": "EXIT_E", "cost": 2 },
+    { "id": "E_17", "from": "J_S2", "to": "EXIT_S", "cost": 2 },
+    { "id": "E_18", "from": "J_B2", "to": "EXIT_S", "cost": 3 }
+  ],
+  "initial_state": {
+    "blocked_nodes": [],
+    "blocked_edges": [],
+    "closed_exits": []
+  }
+}
