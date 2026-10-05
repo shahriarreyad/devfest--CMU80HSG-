@@ -1,3 +1,47 @@
+# Smart Escape
+
+Participant: Rahat Shahriar Reyad
+Registration Number: CMU80HSG
+
+Live Demo:
+https://reyadpuzzle.netlify.app
+
+Repository:
+https://github.com/shahriarreyad/devfest--CMU80HSG-
+
+## How to Run
+```
+npm install
+npm run dev
+```
+
+## Main Features
+- Building JSON import
+- Interactive evacuation map
+- Minimum-cost route calculation
+- Hazard/blocking controls
+- Automatic route recalculation
+- English/Bangla UI
+
+## Bonus Features
+- Step-by-step route walkthrough
+- Simulation activity log
+- SVG map export
+- Zoom, pan and fit-to-view on the map
+- Deterministic tie-breaking (cost, then exit ID, then node sequence)
+- Automated self-tests (`npm test`)
+
+## Known Issues
+- None known at submission time.
+
+## AI Tools Used
+- Google Antigravity
+
+## Most Useful AI Prompt
+- "Build Smart Escape, an interactive evacuation route simulator: import building JSON, draw the map, compute minimum-cost routes with Dijkstra, let users block rooms, corridors and exits, and recalculate automatically."
+
+---
+
 # SMART ESCAPE
 ## Interactive Evacuation Route Simulator
 
